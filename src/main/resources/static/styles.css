@@ -1,0 +1,88 @@
+:root{--ink:#20231f;--muted:#858a80;--line:#e5e9df;--paper:#f7f8f4;--white:#fff;--lime:#d7f36a;--lilac:#d9d2fa;--peach:#f7d8c4;--mono:"DM Mono",monospace;--sans:"Manrope",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}button,input,textarea,select{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.app-shell{display:flex;min-height:100vh}.sidebar{width:250px;flex-shrink:0;background:#20231f;color:#f4f6ef;padding:29px 18px 24px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:15px;padding:0 10px 39px}.brand>span:last-child span{color:var(--lime)}.brand-mark{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:var(--lime);color:#20231f;font:500 12px var(--mono)}.workspace-switcher{display:flex;align-items:center;gap:9px;padding:11px;border:1px solid #3b4039;border-radius:7px;font-size:11px}.workspace-switcher b,.workspace-switcher small{display:block}.workspace-switcher small{color:#8f968b;margin-top:3px;font:9px var(--mono)}.avatar,.top-avatar{display:grid;place-items:center;border-radius:50%;background:#d2a7b9;color:#432d38;font:500 10px var(--mono)}.avatar{width:28px;height:28px}.chevron{margin-left:auto;color:#8f968b}.primary-nav{display:grid;gap:4px;margin:37px 0 33px}.primary-nav a,.sidebar-bottom>a{display:flex;align-items:center;gap:11px;padding:11px 12px;color:#93998f;border-radius:5px;font-size:11px}.primary-nav a.active,.primary-nav a:hover,.sidebar-bottom>a:hover{background:#30362f;color:#fff}.primary-nav a span{width:15px;font-size:16px}.primary-nav i{margin-left:auto;color:var(--lime);font:9px var(--mono)}.sidebar-label,.eyebrow{font:10px var(--mono);letter-spacing:.12em;color:#929990}.sidebar-label{padding:0 12px 12px}.channels{display:grid;grid-template-columns:18px 1fr auto;gap:14px 7px;align-items:center;padding:0 12px;color:#b5bbb1;font:11px var(--mono)}.channels b{color:#71786e;font-weight:400}.channel-dot{width:7px;height:7px;border-radius:50%}.instagram{background:#e7a2bb}.linkedin{background:#90bfe2}.x{background:#ebebe4}.sidebar-bottom{margin-top:auto;display:grid;gap:5px}.upgrade-card{margin-top:18px;padding:17px 14px;background:#30362f;border:1px solid #41493e;border-radius:7px}.upgrade-card strong{font-size:11px}.upgrade-card p{margin:8px 0 14px;color:#aeb5a8;font-size:10px;line-height:1.5}.upgrade-card button{border:0;background:var(--lime);border-radius:4px;padding:8px 10px;width:100%;font-size:10px;font-weight:700;text-align:left}.upgrade-card button span{float:right;font-size:15px}.main-content{min-width:0;flex:1}.topbar{display:flex;align-items:center;justify-content:space-between;padding:28px 5.5%;border-bottom:1px solid var(--line)}.breadcrumbs{display:flex;gap:12px;align-items:center;font:10px var(--mono);color:#9ba096}.breadcrumbs b{font-weight:400;color:#c6cac0}.breadcrumbs strong{color:var(--ink);font-weight:500}.top-actions{display:flex;gap:22px;align-items:center}.icon-button{position:relative;border:0;background:none;color:#7d8479;font-size:22px}.icon-button i{position:absolute;top:3px;right:0;width:5px;height:5px;background:#e495a7;border-radius:50%;border:1px solid var(--paper)}.top-avatar{width:29px;height:29px}.mobile-menu{display:none;border:0;background:none;font-size:20px}.content-wrap{width:min(1100px,87%);margin:0 auto;padding:75px 0 80px}.welcome-row{display:flex;justify-content:space-between;align-items:end}.welcome-row h1{margin:17px 0 18px;font-size:clamp(40px,5vw,68px);line-height:.98;letter-spacing:-.09em}.welcome-row h1 em{color:#a8b947;font:400 .95em Georgia,serif;letter-spacing:-.09em}.subheading{max-width:410px;margin:0;color:var(--muted);font-size:13px;line-height:1.7}.button{display:inline-flex;align-items:center;gap:15px;border:0;border-radius:100px;padding:13px 18px;font-size:11px;font-weight:700;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--ink);color:#fff}.button-primary:hover{background:#394034}.welcome-row>.button{margin-bottom:6px}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:70px 0 78px}.stat-grid article{display:flex;align-items:start;gap:15px;padding:21px;border:1px solid var(--line);background:rgba(255,255,255,.42);border-radius:7px}.stat-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;font-size:17px}.lime{background:var(--lime)}.lilac{background:var(--lilac)}.peach{background:var(--peach)}.stat-grid small,.stat-grid p{display:block;color:var(--muted);font:10px var(--mono)}.stat-grid strong{display:block;margin:4px 0 5px;font-size:27px;letter-spacing:-.07em}.stat-grid p{margin:0}.up{color:#718d30}.section-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:20px}.section-head h2,.ideas-section h2{margin:13px 0 0;font-size:25px;letter-spacing:-.06em}.section-head h2 span{color:#b2bb52;font-weight:400}.text-button{border:0;background:none;padding:0;color:#868d82;font:10px var(--mono)}.filter-group{display:flex;gap:22px}.filter{border:0;background:none;color:#9ba096;font:10px var(--mono);padding:8px 0}.filter.active{color:var(--ink);border-bottom:1px solid var(--ink)}.post-list{display:grid}.post-card{display:grid;grid-template-columns:48px 1fr 160px 24px;gap:17px;align-items:center;padding:21px 3px;border-bottom:1px solid var(--line)}.post-date{font:10px var(--mono);color:#90978d}.post-date strong{display:block;font-size:19px;color:var(--ink);font-weight:500}.post-copy h3{margin:0 0 6px;font-size:13px;letter-spacing:-.02em}.post-copy p{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;margin:0;max-width:530px;color:#858c81;font-size:11px}.post-channel{display:flex;align-items:center;gap:8px;color:#6d756b;font:10px var(--mono)}.post-channel span{width:8px;height:8px;border-radius:50%}.post-status{display:inline-block;margin-top:8px;padding:4px 7px;border-radius:3px;background:#e5f0c2;color:#667b31;font:9px var(--mono)}.post-status.draft{background:#ece7f9;color:#77659e}.post-menu{border:0;background:none;color:#8e958b;font-size:19px}.empty-state{text-align:center;padding:65px 0;border-bottom:1px solid var(--line)}.empty-state>div{font-size:25px;color:#b6c75b}.empty-state h3{margin:12px 0 7px}.empty-state p{margin:0 0 19px;color:var(--muted);font-size:12px}.ideas-section{padding-top:80px}.ideas-section h2{margin-bottom:26px;font-size:34px}.idea-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.idea-card{position:relative;min-height:143px;padding:18px;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:7px;transition:transform .2s,box-shadow .2s}.idea-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(30,35,26,.08)}.idea-card>span{display:block;margin-bottom:15px;font-size:20px;color:#a9b84f}.idea-card b{display:block;font-size:12px;line-height:1.4}.idea-card small{display:block;margin-top:9px;color:var(--muted);font:9px var(--mono)}.idea-card i{position:absolute;right:17px;bottom:16px;color:#858c80;font-style:normal}.toast{position:fixed;right:28px;bottom:28px;padding:13px 18px;background:#20231f;color:#fff;border-radius:6px;box-shadow:0 10px 30px #0002;font:11px var(--mono);opacity:0;transform:translateY(12px);transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:none}dialog{width:min(580px,calc(100% - 30px));padding:0;border:0;border-radius:9px;box-shadow:0 25px 80px #20231f33}dialog::backdrop{background:#20231f66;backdrop-filter:blur(3px)}#composer-form{padding:30px}.modal-header{display:flex;justify-content:space-between;align-items:start;margin-bottom:26px}.modal-header h2{margin:10px 0 0;font-size:28px;letter-spacing:-.07em}.close-button{border:0;background:none;font-size:25px;color:#8d9389}label{display:block;margin-bottom:18px;color:#777e73;font:10px var(--mono)}label input,label textarea,label select{display:block;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:5px;outline:0;color:var(--ink);background:#fbfcf9;font:12px var(--sans)}label input:focus,label textarea:focus,label select:focus{border-color:#a7b84e}textarea{resize:vertical}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.ai-row{display:flex;gap:9px;margin:3px 0 27px}.ai-row input{min-width:0;flex:1;padding:11px;border:1px dashed #c5ccb9;border-radius:5px;outline:0;font-size:11px}.button-ai{padding:10px 13px;background:#eff4d9;color:#6d7f2d;font-size:10px}.modal-actions{display:flex;justify-content:flex-end;gap:21px;align-items:center}.modal-actions .text-button{color:#777e73}.modal-actions .button{padding:12px 16px}@media(max-width:850px){.sidebar{width:205px}.content-wrap{width:90%}}@media(max-width:680px){.sidebar{position:fixed;z-index:4;left:-250px;top:0;bottom:0;transition:left .25s}.sidebar.open{left:0}.mobile-menu{display:block}.topbar{padding:20px 5%}.breadcrumbs{display:none}.content-wrap{padding-top:48px}.welcome-row{display:block}.welcome-row>.button{margin-top:28px}.stat-grid{grid-template-columns:1fr;margin:45px 0 55px}.section-head{display:block}.filter-group{margin-top:18px;gap:18px}.post-card{grid-template-columns:38px 1fr 18px}.post-channel{grid-column:2}.post-status{margin-left:8px}.idea-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.ai-row{display:block}.ai-row input,.button-ai{width:100%}.button-ai{margin-top:9px}.toast{right:15px;bottom:15px}}\n*** Add File: C:\Users\anura\.copilot\repos\copilot-worktrees\portfolio\techwithjoshi-am-scaling-giggle\src\main\resources\static\app.js
+const state = { posts: [], status: "ALL" };
+const list = document.querySelector("#post-list");
+const empty = document.querySelector("#empty-state");
+const composer = document.querySelector("#composer");
+const form = document.querySelector("#composer-form");
+const toast = document.querySelector("#toast");
+
+const api = async (path, options = {}) => {
+  const response = await fetch(path, { headers: { "Content-Type": "application/json" }, ...options });
+  if (!response.ok) {
+    const problem = await response.json().catch(() => ({ message: "Something went wrong" }));
+    throw new Error(problem.message || "Something went wrong");
+  }
+  return response.status === 204 ? null : response.json();
+};
+
+const notify = (message) => {
+  toast.textContent = message;
+  toast.classList.add("show");
+  window.setTimeout(() => toast.classList.remove("show"), 2800);
+};
+
+const dateParts = (value) => {
+  if (!value) return { day: "—", month: "OPEN" };
+  const date = new Date(value);
+  return { day: String(date.getDate()).padStart(2, "0"), month: date.toLocaleString("en", { month: "short" }).toUpperCase() };
+};
+
+const render = () => {
+  const posts = state.posts.filter((post) => state.status === "ALL" || post.status === state.status);
+  document.querySelector("#scheduled-stat").textContent = state.posts.filter((post) => post.status === "SCHEDULED").length;
+  document.querySelector("#draft-stat").textContent = state.posts.filter((post) => post.status === "DRAFT").length;
+  document.querySelector("#draft-count").textContent = state.posts.filter((post) => post.status === "DRAFT").length;
+  list.innerHTML = posts.map((post) => {
+    const date = dateParts(post.scheduledFor);
+    const channelClass = post.platform.toLowerCase();
+    return `<article class="post-card"><div class="post-date"><strong>${date.day}</strong>${date.month}</div><div class="post-copy"><h3>${escapeHtml(post.title)}</h3><p>${escapeHtml(post.content)}</p><span class="post-status ${post.status.toLowerCase()}">${post.status === "DRAFT" ? "Draft" : "Scheduled"}</span></div><div class="post-channel"><span class="${channelClass}"></span>${post.platform}${post.scheduledFor ? ` · ${new Date(post.scheduledFor).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : ""}</div><button class="post-menu" data-delete="${post.id}" aria-label="Delete post">···</button></article>`;
+  }).join("");
+  empty.hidden = posts.length > 0;
+};
+
+const escapeHtml = (value) => value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char]));
+const loadPosts = async () => { state.posts = await api("/api/posts"); render(); };
+
+document.querySelectorAll(".filter").forEach((button) => button.addEventListener("click", () => {
+  document.querySelector(".filter.active").classList.remove("active");
+  button.classList.add("active");
+  state.status = button.dataset.status;
+  render();
+}));
+document.querySelectorAll("#new-post, #empty-create").forEach((button) => button.addEventListener("click", () => composer.showModal()));
+document.querySelectorAll(".idea-card").forEach((button) => button.addEventListener("click", () => {
+  composer.showModal();
+  form.elements.title.value = button.dataset.topic;
+  form.elements.content.value = `I have been thinking about ${button.dataset.topic.toLowerCase()}. `;
+}));
+document.querySelector("#generate").addEventListener("click", async () => {
+  const topic = document.querySelector("#ai-topic").value.trim();
+  if (!topic) return notify("Add a topic first, then let AI shape it.");
+  try {
+    const generated = await api("/api/posts/generate", { method: "POST", body: JSON.stringify({ topic, platform: form.elements.platform.value, tone: "warm" }) });
+    form.elements.title.value = generated.title;
+    form.elements.content.value = generated.content;
+    await loadPosts();
+    notify("A starting point is ready — make it yours.");
+  } catch (error) { notify(error.message); }
+});
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const data = new FormData(form);
+  const payload = Object.fromEntries(data.entries());
+  payload.scheduledFor = payload.scheduledFor || null;
+  try {
+    await api("/api/posts", { method: "POST", body: JSON.stringify(payload) });
+    form.reset();
+    composer.close();
+    await loadPosts();
+    notify("Post added to your content queue.");
+  } catch (error) { notify(error.message); }
+});
+list.addEventListener("click", async (event) => {
+  const button = event.target.closest("[data-delete]");
+  if (!button || !window.confirm("Delete this post?")) return;
+  try { await api(`/api/posts/${button.dataset.delete}`, { method: "DELETE" }); await loadPosts(); notify("Post removed."); } catch (error) { notify(error.message); }
+});
+document.querySelector(".mobile-menu").addEventListener("click", () => document.querySelector(".sidebar").classList.toggle("open"));
+loadPosts().catch((error) => notify(error.message));

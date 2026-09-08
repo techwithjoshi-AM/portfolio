@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <title>Social Studio — Content scheduler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/"><span class="brand-mark">ss</span><span>social<span>.</span>studio</span></a>
+      <div class="workspace-switcher"><span class="avatar">AJ</span><span><b>Anurag's workspace</b><small>Personal workspace</small></span><span class="chevron">⌄</span></div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a class="active" href="#dashboard"><span>◈</span> Overview</a>
+        <a href="#calendar"><span>◫</span> Content calendar</a>
+        <a href="#drafts"><span>✎</span> Drafts <i id="draft-count">0</i></a>
+        <a href="#analytics"><span>⌁</span> Analytics</a>
+      </nav>
+      <div class="sidebar-label">Your channels</div>
+      <div class="channels"><span class="channel-dot instagram"></span> Instagram <b>↗</b><span class="channel-dot linkedin"></span> LinkedIn <b>↗</b><span class="channel-dot x"></span> X <b>↗</b></div>
+      <div class="sidebar-bottom"><a href="#settings">⚙ Settings</a><a href="#help">? Help center</a><div class="upgrade-card"><strong>Unlock your flow</strong><p>Get unlimited AI generations and analytics.</p><button type="button">Explore pro <span>↗</span></button></div></div>
+    </aside>
+    <main class="main-content" id="dashboard">
+      <header class="topbar"><button class="mobile-menu" aria-label="Open menu">☰</button><div class="breadcrumbs"><span>Workspace</span><b>/</b><strong>Overview</strong></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">♢<i></i></button><div class="top-avatar">AJ</div></div></header>
+      <div class="content-wrap">
+        <section class="welcome-row"><div><p class="eyebrow">MONDAY, SEPTEMBER 08, 2026</p><h1>Make something<br><em>worth sharing.</em></h1><p class="subheading">Your content, beautifully organized. Keep your ideas moving and your audience close.</p></div><button class="button button-primary" id="new-post"><span>＋</span> Create a post</button></section>
+        <section class="stat-grid" aria-label="Content summary"><article><span class="stat-icon lime">✦</span><div><small>Posts scheduled</small><strong id="scheduled-stat">0</strong><p><span class="up">↗ 12%</span> vs last month</p></div></article><article><span class="stat-icon lilac">◌</span><div><small>Drafts in progress</small><strong id="draft-stat">0</strong><p>Ready when you are</p></div></article><article><span class="stat-icon peach">◒</span><div><small>Audience reached</small><strong>24.8k</strong><p><span class="up">↗ 8.4%</span> this month</p></div></article></section>
+        <section class="section-head" id="calendar"><div><p class="eyebrow">CONTENT CALENDAR</p><h2>Upcoming content <span>·</span> <button class="text-button" id="view-all">View all ↗</button></h2></div><div class="filter-group"><button class="filter active" data-status="ALL">All posts</button><button class="filter" data-status="SCHEDULED">Scheduled</button><button class="filter" data-status="DRAFT">Drafts</button></div></section>
+        <section class="post-list" id="post-list" aria-live="polite"></section>
+        <section class="empty-state" id="empty-state" hidden><div>✦</div><h3>Your content queue is clear.</h3><p>Turn your next idea into a post and keep the momentum going.</p><button class="button button-primary" id="empty-create">Create a post <span>↗</span></button></section>
+        <section class="ideas-section"><div><p class="eyebrow">NEED A LITTLE SPARK?</p><h2>Start with an idea.</h2></div><div class="idea-grid"><button class="idea-card" data-topic="A lesson I learned the hard way"><span>✳</span><b>A lesson I learned<br>the hard way</b><small>Personal story</small><i>↗</i></button><button class="idea-card" data-topic="A behind-the-scenes look"><span>◌</span><b>A behind-the-scenes<br>look</b><small>Build in public</small><i>↗</i></button><button class="idea-card" data-topic="Three things worth knowing"><span>✦</span><b>Three things<br>worth knowing</b><small>Educational</small><i>↗</i></button></div></section>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <dialog id="composer"><form method="dialog" id="composer-form"><div class="modal-header"><div><p class="eyebrow">NEW CONTENT</p><h2>Shape the idea.</h2></div><button class="close-button" value="cancel" aria-label="Close">×</button></div><label>Post title<input name="title" maxlength="90" placeholder="Give your idea a name" required></label><label>What are you thinking about?<textarea name="content" rows="5" maxlength="5000" placeholder="Write your post or let AI give you a starting point..." required></textarea></label><div class="form-row"><label>Channel<select name="platform"><option>LinkedIn</option><option>Instagram</option><option>X</option></select></label><label>Schedule for<input type="datetime-local" name="scheduledFor"></label></div><div class="ai-row"><input id="ai-topic" placeholder="Generate from a topic..."><button type="button" class="button button-ai" id="generate">✦ Generate with AI</button></div><div class="modal-actions"><button class="text-button" value="cancel">Cancel</button><button class="button button-primary" value="save">Save post <span>↗</span></button></div></form></dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
